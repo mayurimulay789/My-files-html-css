@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    h1>HTML DOM Events</h1>
+<h2>The event triggers the function when press down the key</h2>
+Enter any number: <input type="text" id="demo" onkeypress="myfunction()">
+<p id="demo"></p>
+<input type="text" onkeyup="paragraph()">
+<input type="text"onkeydown="paragraph2">
+</head>
+<body>
+<script>
+   function  myfunction() {
+    let x =document.getElementById("demo");
+    x.value=x.value.toLowerCase();
+}
+function paragraph(){
+    alert("you pressed a key inside input field");
+}
+function paragraph2 () {
+    alert("you Pressed a key inside the input field");
+}
+</script>
+</body>
+</html>
