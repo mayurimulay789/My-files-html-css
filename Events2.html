@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events2</title>
+    <h1>The OnFocus Event & OnBlur Event</h1>
+    <p>when input field get focus,function change background color</p> <br>
+    Enter your Number :<input type="text" onfocus="myfunction2(this)"><br>
+
+    Enter your Number : <input type="text"  id="demo" onblur="myfunction3()">
+<h1>HTML Change Event</h1>
+Gender: <select id="text" onchange="myfunction()">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+<p>when you select n new car function triggers which output will be selected car</p>
+<p id="demo1"></p>
+</head>
+<body>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("text").value
+            document.getElementById("demo1").innerHTML= "You selected:" +x;
+
+        }
+        function myfunction2(x){
+            x.style.background="yellow";
+        }
+        function myfunction3(){
+            let x =document.getElementById("demo");
+            x.value =x.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

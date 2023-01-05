@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    h1>HTML DOM Events</h1>
+    h1>HTML onkeyup,onkeydown,onkeypress events</h1>
 <h2>The event triggers the function when press down the key</h2>
 Enter any number: <input type="text" id="demo" onkeypress="myfunction()">
 <p id="demo"></p>
 <input type="text" onkeyup="paragraph()">
 <input type="text"onkeydown="paragraph2">
+<Button id="mau" ondblclick="param()">double click this paragraph triggers a function </Button>
+
 </head>
 <body>
 <script>
+    function param() {
+        document.getElementById("mau").innerHTML ="HELLO MORNING";   
+    }
    function  myfunction() {
     let x =document.getElementById("demo");
     x.value=x.value.toLowerCase();
@@ -25,6 +30,7 @@ function paragraph(){
 function paragraph2 () {
     alert("you Pressed a key inside the input field");
 }
+
 </script>
 </body>
 </html>
